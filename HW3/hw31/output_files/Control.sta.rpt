@@ -1,0 +1,1058 @@
+TimeQuest Timing Analyzer report for Control
+Wed Jan 04 19:37:39 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Control                                                           ;
+; Device Family      ; Cyclone IV GX                                                     ;
+; Device Name        ; EP4CGX15BF14C6                                                    ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++------------+--------------+-------+--------+--------+-------+
+; Input Port ; Output Port  ; RR    ; RF     ; FR     ; FF    ;
++------------+--------------+-------+--------+--------+-------+
+; Op0        ; operation[0] ; 7.609 ;        ;        ; 7.624 ;
+; Op1        ; operation[2] ; 7.654 ;        ;        ; 8.016 ;
+; Op2        ; operation[1] ;       ; 7.802  ; 8.154  ;       ;
+; Op3        ; operation[0] ; 8.841 ;        ;        ; 9.180 ;
+; Op26       ; ALU_src      ; 8.691 ;        ;        ; 9.089 ;
+; Op26       ; Branch       ;       ; 8.501  ; 8.793  ;       ;
+; Op26       ; J            ;       ; 8.484  ; 8.795  ;       ;
+; Op26       ; MemRead      ; 7.928 ;        ;        ; 8.513 ;
+; Op26       ; MemWrite     ; 7.482 ;        ;        ; 8.067 ;
+; Op26       ; MemtoReg     ; 7.939 ;        ;        ; 8.523 ;
+; Op26       ; RegDest      ;       ; 8.483  ; 8.771  ;       ;
+; Op26       ; RegWrite     ; 7.644 ; 8.613  ; 9.178  ; 7.976 ;
+; Op26       ; operation[0] ;       ; 10.649 ; 11.148 ;       ;
+; Op26       ; operation[1] ; 7.936 ;        ;        ; 8.441 ;
+; Op26       ; operation[2] ;       ; 7.651  ; 8.209  ;       ;
+; Op27       ; ALU_src      ; 8.682 ;        ;        ; 9.081 ;
+; Op27       ; Branch       ;       ; 7.294  ; 7.582  ;       ;
+; Op27       ; J            ; 7.205 ;        ;        ; 7.737 ;
+; Op27       ; MemRead      ; 7.925 ;        ;        ; 8.513 ;
+; Op27       ; MemWrite     ; 7.520 ;        ;        ; 8.098 ;
+; Op27       ; MemtoReg     ; 7.936 ;        ;        ; 8.523 ;
+; Op27       ; RegDest      ;       ; 7.262  ; 7.555  ;       ;
+; Op27       ; RegWrite     ; 7.605 ; 7.392  ; 7.962  ; 7.908 ;
+; Op27       ; operation[0] ;       ; 9.428  ; 9.932  ;       ;
+; Op27       ; operation[1] ; 6.714 ;        ;        ; 7.278 ;
+; Op27       ; operation[2] ;       ; 6.959  ; 7.522  ;       ;
+; Op28       ; ALU_src      ;       ; 9.112  ; 9.589  ;       ;
+; Op28       ; Branch       ; 7.477 ;        ;        ; 8.051 ;
+; Op28       ; J            ;       ; 7.627  ; 7.992  ;       ;
+; Op28       ; MemRead      ;       ; 8.544  ; 8.832  ;       ;
+; Op28       ; MemWrite     ;       ; 8.129  ; 8.427  ;       ;
+; Op28       ; MemtoReg     ;       ; 8.554  ; 8.843  ;       ;
+; Op28       ; RegDest      ;       ; 7.587  ; 7.916  ;       ;
+; Op28       ; RegWrite     ;       ; 7.939  ; 8.512  ;       ;
+; Op28       ; operation[0] ;       ; 9.753  ; 10.293 ;       ;
+; Op28       ; operation[1] ; 7.034 ;        ;        ; 7.600 ;
+; Op28       ; operation[2] ; 7.174 ;        ;        ; 7.505 ;
+; Op29       ; Branch       ;       ; 8.512  ; 8.772  ;       ;
+; Op29       ; J            ;       ; 8.495  ; 8.774  ;       ;
+; Op29       ; MemRead      ;       ; 8.313  ; 8.609  ;       ;
+; Op29       ; MemWrite     ; 7.784 ;        ;        ; 8.325 ;
+; Op29       ; MemtoReg     ;       ; 8.323  ; 8.620  ;       ;
+; Op29       ; RegDest      ;       ; 8.494  ; 8.750  ;       ;
+; Op29       ; RegWrite     ;       ; 8.624  ; 9.157  ;       ;
+; Op29       ; operation[0] ;       ; 10.660 ; 11.127 ;       ;
+; Op29       ; operation[1] ; 7.947 ;        ;        ; 8.420 ;
+; Op29       ; operation[2] ;       ; 7.662  ; 8.188  ;       ;
+; Op30       ; ALU_src      ;       ; 8.945  ; 9.377  ;       ;
+; Op30       ; Branch       ;       ; 8.382  ; 8.630  ;       ;
+; Op30       ; J            ;       ; 8.365  ; 8.632  ;       ;
+; Op30       ; MemRead      ;       ; 8.377  ; 8.620  ;       ;
+; Op30       ; MemWrite     ;       ; 7.962  ; 8.215  ;       ;
+; Op30       ; MemtoReg     ;       ; 8.387  ; 8.631  ;       ;
+; Op30       ; RegDest      ;       ; 8.364  ; 8.608  ;       ;
+; Op30       ; RegWrite     ;       ; 8.494  ; 9.015  ;       ;
+; Op30       ; operation[0] ;       ; 10.530 ; 10.985 ;       ;
+; Op30       ; operation[1] ; 7.817 ;        ;        ; 8.278 ;
+; Op30       ; operation[2] ;       ; 7.532  ; 8.046  ;       ;
+; Op31       ; ALU_src      ; 9.253 ;        ;        ; 9.629 ;
+; Op31       ; Branch       ;       ; 8.568  ; 8.796  ;       ;
+; Op31       ; J            ;       ; 8.551  ; 8.798  ;       ;
+; Op31       ; MemRead      ; 8.496 ;        ;        ; 9.061 ;
+; Op31       ; MemWrite     ; 8.091 ;        ;        ; 8.646 ;
+; Op31       ; MemtoReg     ; 8.507 ;        ;        ; 9.071 ;
+; Op31       ; RegDest      ;       ; 8.550  ; 8.774  ;       ;
+; Op31       ; RegWrite     ; 8.176 ; 8.680  ; 9.181  ; 8.456 ;
+; Op31       ; operation[0] ;       ; 10.716 ; 11.151 ;       ;
+; Op31       ; operation[1] ; 8.003 ;        ;        ; 8.444 ;
+; Op31       ; operation[2] ;       ; 7.718  ; 8.212  ;       ;
++------------+--------------+-------+--------+--------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++------------+--------------+-------+--------+--------+-------+
+; Input Port ; Output Port  ; RR    ; RF     ; FR     ; FF    ;
++------------+--------------+-------+--------+--------+-------+
+; Op0        ; operation[0] ; 7.364 ;        ;        ; 7.381 ;
+; Op1        ; operation[2] ; 7.397 ;        ;        ; 7.750 ;
+; Op2        ; operation[1] ;       ; 7.545  ; 7.884  ;       ;
+; Op3        ; operation[0] ; 8.539 ;        ;        ; 8.866 ;
+; Op26       ; ALU_src      ; 8.389 ;        ;        ; 8.776 ;
+; Op26       ; Branch       ;       ; 8.184  ; 8.469  ;       ;
+; Op26       ; J            ;       ; 8.158  ; 8.476  ;       ;
+; Op26       ; MemRead      ; 7.653 ;        ;        ; 8.228 ;
+; Op26       ; MemWrite     ; 7.225 ;        ;        ; 7.799 ;
+; Op26       ; MemtoReg     ; 7.664 ;        ;        ; 8.239 ;
+; Op26       ; RegDest      ;       ; 8.160  ; 8.458  ;       ;
+; Op26       ; RegWrite     ; 7.388 ; 8.285  ; 8.857  ; 7.709 ;
+; Op26       ; operation[0] ;       ; 10.174 ; 10.696 ;       ;
+; Op26       ; operation[1] ; 7.664 ;        ;        ; 8.160 ;
+; Op26       ; operation[2] ;       ; 7.390  ; 7.937  ;       ;
+; Op27       ; ALU_src      ; 8.331 ;        ;        ; 8.704 ;
+; Op27       ; Branch       ;       ; 7.053  ; 7.331  ;       ;
+; Op27       ; J            ; 6.958 ;        ;        ; 7.481 ;
+; Op27       ; MemRead      ; 7.617 ;        ;        ; 8.195 ;
+; Op27       ; MemWrite     ; 7.226 ;        ;        ; 7.799 ;
+; Op27       ; MemtoReg     ; 7.628 ;        ;        ; 8.206 ;
+; Op27       ; RegDest      ;       ; 7.018  ; 7.301  ;       ;
+; Op27       ; RegWrite     ; 7.349 ; 7.143  ; 7.700  ; 7.643 ;
+; Op27       ; operation[0] ;       ; 9.032  ; 9.539  ;       ;
+; Op27       ; operation[1] ; 6.490 ;        ;        ; 7.044 ;
+; Op27       ; operation[2] ;       ; 6.700  ; 7.255  ;       ;
+; Op28       ; ALU_src      ;       ; 8.728  ; 9.210  ;       ;
+; Op28       ; Branch       ; 7.225 ;        ;        ; 7.786 ;
+; Op28       ; J            ;       ; 7.369  ; 7.721  ;       ;
+; Op28       ; MemRead      ;       ; 8.219  ; 8.496  ;       ;
+; Op28       ; MemWrite     ;       ; 7.823  ; 8.105  ;       ;
+; Op28       ; MemtoReg     ;       ; 8.230  ; 8.507  ;       ;
+; Op28       ; RegDest      ;       ; 7.329  ; 7.648  ;       ;
+; Op28       ; RegWrite     ;       ; 7.454  ; 8.047  ;       ;
+; Op28       ; operation[0] ;       ; 9.343  ; 9.886  ;       ;
+; Op28       ; operation[1] ; 6.798 ;        ;        ; 7.353 ;
+; Op28       ; operation[2] ; 6.936 ;        ;        ; 7.257 ;
+; Op29       ; Branch       ;       ; 8.195  ; 8.450  ;       ;
+; Op29       ; J            ;       ; 8.169  ; 8.457  ;       ;
+; Op29       ; MemRead      ;       ; 7.994  ; 8.281  ;       ;
+; Op29       ; MemWrite     ; 7.479 ;        ;        ; 8.017 ;
+; Op29       ; MemtoReg     ;       ; 8.005  ; 8.292  ;       ;
+; Op29       ; RegDest      ;       ; 8.171  ; 8.439  ;       ;
+; Op29       ; RegWrite     ;       ; 7.497  ; 8.035  ;       ;
+; Op29       ; operation[0] ;       ; 10.185 ; 10.677 ;       ;
+; Op29       ; operation[1] ; 7.675 ;        ;        ; 8.141 ;
+; Op29       ; operation[2] ;       ; 7.401  ; 7.918  ;       ;
+; Op30       ; ALU_src      ;       ; 8.568  ; 9.005  ;       ;
+; Op30       ; Branch       ;       ; 8.071  ; 8.314  ;       ;
+; Op30       ; J            ;       ; 8.045  ; 8.321  ;       ;
+; Op30       ; MemRead      ;       ; 8.059  ; 8.291  ;       ;
+; Op30       ; MemWrite     ;       ; 7.663  ; 7.900  ;       ;
+; Op30       ; MemtoReg     ;       ; 8.070  ; 8.302  ;       ;
+; Op30       ; RegDest      ;       ; 8.047  ; 8.303  ;       ;
+; Op30       ; RegWrite     ;       ; 7.507  ; 8.023  ;       ;
+; Op30       ; operation[0] ;       ; 10.061 ; 10.541 ;       ;
+; Op30       ; operation[1] ; 7.551 ;        ;        ; 8.005 ;
+; Op30       ; operation[2] ;       ; 7.277  ; 7.782  ;       ;
+; Op31       ; ALU_src      ; 8.879 ;        ;        ; 9.232 ;
+; Op31       ; Branch       ;       ; 8.248  ; 8.473  ;       ;
+; Op31       ; J            ;       ; 8.222  ; 8.480  ;       ;
+; Op31       ; MemRead      ; 8.165 ;        ;        ; 8.723 ;
+; Op31       ; MemWrite     ; 7.774 ;        ;        ; 8.327 ;
+; Op31       ; MemtoReg     ; 8.176 ;        ;        ; 8.734 ;
+; Op31       ; RegDest      ;       ; 8.224  ; 8.462  ;       ;
+; Op31       ; RegWrite     ; 7.897 ; 8.349  ; 8.861  ; 8.171 ;
+; Op31       ; operation[0] ;       ; 10.238 ; 10.700 ;       ;
+; Op31       ; operation[1] ; 7.728 ;        ;        ; 8.164 ;
+; Op31       ; operation[2] ;       ; 7.454  ; 7.941  ;       ;
++------------+--------------+-------+--------+--------+-------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; Op0        ; operation[0] ; 6.887 ;       ;       ; 6.870 ;
+; Op1        ; operation[2] ; 6.793 ;       ;       ; 7.033 ;
+; Op2        ; operation[1] ;       ; 6.939 ; 7.147 ;       ;
+; Op3        ; operation[0] ; 7.870 ;       ;       ; 8.091 ;
+; Op26       ; ALU_src      ; 7.760 ;       ;       ; 7.979 ;
+; Op26       ; Branch       ;       ; 7.573 ; 7.736 ;       ;
+; Op26       ; J            ;       ; 7.521 ; 7.727 ;       ;
+; Op26       ; MemRead      ; 7.002 ;       ;       ; 7.539 ;
+; Op26       ; MemWrite     ; 6.606 ;       ;       ; 7.114 ;
+; Op26       ; MemtoReg     ; 7.014 ;       ;       ; 7.550 ;
+; Op26       ; RegDest      ;       ; 7.523 ; 7.716 ;       ;
+; Op26       ; RegWrite     ; 6.795 ; 7.626 ; 8.115 ; 6.992 ;
+; Op26       ; operation[0] ;       ; 9.462 ; 9.911 ;       ;
+; Op26       ; operation[1] ; 7.008 ;       ;       ; 7.449 ;
+; Op26       ; operation[2] ;       ; 6.755 ; 7.245 ;       ;
+; Op27       ; ALU_src      ; 7.732 ;       ;       ; 7.967 ;
+; Op27       ; Branch       ;       ; 6.470 ; 6.644 ;       ;
+; Op27       ; J            ; 6.327 ;       ;       ; 6.805 ;
+; Op27       ; MemRead      ; 6.985 ;       ;       ; 7.532 ;
+; Op27       ; MemWrite     ; 6.621 ;       ;       ; 7.138 ;
+; Op27       ; MemtoReg     ; 6.997 ;       ;       ; 7.543 ;
+; Op27       ; RegDest      ;       ; 6.411 ; 6.621 ;       ;
+; Op27       ; RegWrite     ; 6.740 ; 6.514 ; 7.020 ; 6.924 ;
+; Op27       ; operation[0] ;       ; 8.350 ; 8.816 ;       ;
+; Op27       ; operation[1] ; 5.893 ;       ;       ; 6.403 ;
+; Op27       ; operation[2] ;       ; 6.111 ; 6.617 ;       ;
+; Op28       ; ALU_src      ;       ; 8.032 ; 8.502 ;       ;
+; Op28       ; Branch       ; 6.589 ;       ;       ; 7.115 ;
+; Op28       ; J            ;       ; 6.745 ; 7.000 ;       ;
+; Op28       ; MemRead      ;       ; 7.597 ; 7.755 ;       ;
+; Op28       ; MemWrite     ;       ; 7.203 ; 7.391 ;       ;
+; Op28       ; MemtoReg     ;       ; 7.608 ; 7.767 ;       ;
+; Op28       ; RegDest      ;       ; 6.712 ; 6.940 ;       ;
+; Op28       ; RegWrite     ;       ; 6.989 ; 7.510 ;       ;
+; Op28       ; operation[0] ;       ; 8.651 ; 9.135 ;       ;
+; Op28       ; operation[1] ; 6.190 ;       ;       ; 6.689 ;
+; Op28       ; operation[2] ; 6.350 ;       ;       ; 6.567 ;
+; Op29       ; Branch       ;       ; 7.584 ; 7.713 ;       ;
+; Op29       ; J            ;       ; 7.532 ; 7.704 ;       ;
+; Op29       ; MemRead      ;       ; 7.414 ; 7.547 ;       ;
+; Op29       ; MemWrite     ; 6.878 ;       ;       ; 7.338 ;
+; Op29       ; MemtoReg     ;       ; 7.425 ; 7.559 ;       ;
+; Op29       ; RegDest      ;       ; 7.534 ; 7.693 ;       ;
+; Op29       ; RegWrite     ;       ; 7.637 ; 8.092 ;       ;
+; Op29       ; operation[0] ;       ; 9.473 ; 9.888 ;       ;
+; Op29       ; operation[1] ; 7.019 ;       ;       ; 7.426 ;
+; Op29       ; operation[2] ;       ; 6.766 ; 7.222 ;       ;
+; Op30       ; ALU_src      ;       ; 7.889 ; 8.325 ;       ;
+; Op30       ; Branch       ;       ; 7.454 ; 7.583 ;       ;
+; Op30       ; J            ;       ; 7.402 ; 7.574 ;       ;
+; Op30       ; MemRead      ;       ; 7.454 ; 7.578 ;       ;
+; Op30       ; MemWrite     ;       ; 7.060 ; 7.214 ;       ;
+; Op30       ; MemtoReg     ;       ; 7.465 ; 7.590 ;       ;
+; Op30       ; RegDest      ;       ; 7.404 ; 7.563 ;       ;
+; Op30       ; RegWrite     ;       ; 7.507 ; 7.962 ;       ;
+; Op30       ; operation[0] ;       ; 9.343 ; 9.758 ;       ;
+; Op30       ; operation[1] ; 6.889 ;       ;       ; 7.296 ;
+; Op30       ; operation[2] ;       ; 6.636 ; 7.092 ;       ;
+; Op31       ; ALU_src      ; 8.256 ;       ;       ; 8.453 ;
+; Op31       ; Branch       ;       ; 7.618 ; 7.732 ;       ;
+; Op31       ; J            ;       ; 7.566 ; 7.723 ;       ;
+; Op31       ; MemRead      ; 7.509 ;       ;       ; 8.018 ;
+; Op31       ; MemWrite     ; 7.145 ;       ;       ; 7.624 ;
+; Op31       ; MemtoReg     ; 7.521 ;       ;       ; 8.029 ;
+; Op31       ; RegDest      ;       ; 7.568 ; 7.712 ;       ;
+; Op31       ; RegWrite     ; 7.264 ; 7.671 ; 8.111 ; 7.410 ;
+; Op31       ; operation[0] ;       ; 9.507 ; 9.907 ;       ;
+; Op31       ; operation[1] ; 7.053 ;       ;       ; 7.445 ;
+; Op31       ; operation[2] ;       ; 6.800 ; 7.241 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; Op0        ; operation[0] ; 6.662 ;       ;       ; 6.648 ;
+; Op1        ; operation[2] ; 6.566 ;       ;       ; 6.798 ;
+; Op2        ; operation[1] ;       ; 6.708 ; 6.908 ;       ;
+; Op3        ; operation[0] ; 7.600 ;       ;       ; 7.814 ;
+; Op26       ; ALU_src      ; 7.492 ;       ;       ; 7.705 ;
+; Op26       ; Branch       ;       ; 7.291 ; 7.451 ;       ;
+; Op26       ; J            ;       ; 7.230 ; 7.450 ;       ;
+; Op26       ; MemRead      ; 6.758 ;       ;       ; 7.285 ;
+; Op26       ; MemWrite     ; 6.378 ;       ;       ; 6.878 ;
+; Op26       ; MemtoReg     ; 6.771 ;       ;       ; 7.296 ;
+; Op26       ; RegDest      ;       ; 7.235 ; 7.441 ;       ;
+; Op26       ; RegWrite     ; 6.566 ; 7.332 ; 7.831 ; 6.756 ;
+; Op26       ; operation[0] ;       ; 9.041 ; 9.506 ;       ;
+; Op26       ; operation[1] ; 6.766 ;       ;       ; 7.199 ;
+; Op26       ; operation[2] ;       ; 6.525 ; 7.004 ;       ;
+; Op27       ; ALU_src      ; 7.420 ;       ;       ; 7.638 ;
+; Op27       ; Branch       ;       ; 6.256 ; 6.423 ;       ;
+; Op27       ; J            ; 6.110 ;       ;       ; 6.576 ;
+; Op27       ; MemRead      ; 6.710 ;       ;       ; 7.251 ;
+; Op27       ; MemWrite     ; 6.360 ;       ;       ; 6.873 ;
+; Op27       ; MemtoReg     ; 6.723 ;       ;       ; 7.262 ;
+; Op27       ; RegDest      ;       ; 6.195 ; 6.399 ;       ;
+; Op27       ; RegWrite     ; 6.514 ; 6.292 ; 6.789 ; 6.692 ;
+; Op27       ; operation[0] ;       ; 8.001 ; 8.464 ;       ;
+; Op27       ; operation[1] ; 5.695 ;       ;       ; 6.196 ;
+; Op27       ; operation[2] ;       ; 5.887 ; 6.383 ;       ;
+; Op28       ; ALU_src      ;       ; 7.694 ; 8.166 ;       ;
+; Op28       ; Branch       ; 6.364 ;       ;       ; 6.882 ;
+; Op28       ; J            ;       ; 6.514 ; 6.762 ;       ;
+; Op28       ; MemRead      ;       ; 7.307 ; 7.456 ;       ;
+; Op28       ; MemWrite     ;       ; 6.929 ; 7.106 ;       ;
+; Op28       ; MemtoReg     ;       ; 7.318 ; 7.469 ;       ;
+; Op28       ; RegDest      ;       ; 6.484 ; 6.705 ;       ;
+; Op28       ; RegWrite     ;       ; 6.581 ; 7.095 ;       ;
+; Op28       ; operation[0] ;       ; 8.290 ; 8.770 ;       ;
+; Op28       ; operation[1] ; 5.981 ;       ;       ; 6.471 ;
+; Op28       ; operation[2] ; 6.140 ;       ;       ; 6.350 ;
+; Op29       ; Branch       ;       ; 7.302 ; 7.429 ;       ;
+; Op29       ; J            ;       ; 7.241 ; 7.428 ;       ;
+; Op29       ; MemRead      ;       ; 7.130 ; 7.258 ;       ;
+; Op29       ; MemWrite     ; 6.606 ;       ;       ; 7.065 ;
+; Op29       ; MemtoReg     ;       ; 7.141 ; 7.271 ;       ;
+; Op29       ; RegDest      ;       ; 7.246 ; 7.419 ;       ;
+; Op29       ; RegWrite     ;       ; 6.623 ; 7.082 ;       ;
+; Op29       ; operation[0] ;       ; 9.052 ; 9.484 ;       ;
+; Op29       ; operation[1] ; 6.777 ;       ;       ; 7.177 ;
+; Op29       ; operation[2] ;       ; 6.536 ; 6.982 ;       ;
+; Op30       ; ALU_src      ;       ; 7.556 ; 7.996 ;       ;
+; Op30       ; Branch       ;       ; 7.178 ; 7.304 ;       ;
+; Op30       ; J            ;       ; 7.117 ; 7.303 ;       ;
+; Op30       ; MemRead      ;       ; 7.169 ; 7.286 ;       ;
+; Op30       ; MemWrite     ;       ; 6.791 ; 6.936 ;       ;
+; Op30       ; MemtoReg     ;       ; 7.180 ; 7.299 ;       ;
+; Op30       ; RegDest      ;       ; 7.122 ; 7.294 ;       ;
+; Op30       ; RegWrite     ;       ; 6.610 ; 7.090 ;       ;
+; Op30       ; operation[0] ;       ; 8.928 ; 9.359 ;       ;
+; Op30       ; operation[1] ; 6.653 ;       ;       ; 7.052 ;
+; Op30       ; operation[2] ;       ; 6.412 ; 6.857 ;       ;
+; Op31       ; ALU_src      ; 7.923 ;       ;       ; 8.104 ;
+; Op31       ; Branch       ;       ; 7.335 ; 7.447 ;       ;
+; Op31       ; J            ;       ; 7.274 ; 7.446 ;       ;
+; Op31       ; MemRead      ; 7.213 ;       ;       ; 7.717 ;
+; Op31       ; MemWrite     ; 6.863 ;       ;       ; 7.339 ;
+; Op31       ; MemtoReg     ; 7.226 ;       ;       ; 7.728 ;
+; Op31       ; RegDest      ;       ; 7.279 ; 7.437 ;       ;
+; Op31       ; RegWrite     ; 7.017 ; 7.376 ; 7.827 ; 7.158 ;
+; Op31       ; operation[0] ;       ; 9.085 ; 9.502 ;       ;
+; Op31       ; operation[1] ; 6.810 ;       ;       ; 7.195 ;
+; Op31       ; operation[2] ;       ; 6.569 ; 7.000 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; Op0        ; operation[0] ; 4.526 ;       ;       ; 4.940 ;
+; Op1        ; operation[2] ; 4.460 ;       ;       ; 5.086 ;
+; Op2        ; operation[1] ;       ; 4.498 ; 5.138 ;       ;
+; Op3        ; operation[0] ; 5.141 ;       ;       ; 5.860 ;
+; Op26       ; ALU_src      ; 5.101 ;       ;       ; 5.743 ;
+; Op26       ; Branch       ;       ; 4.917 ; 5.509 ;       ;
+; Op26       ; J            ;       ; 4.908 ; 5.490 ;       ;
+; Op26       ; MemRead      ; 4.697 ;       ;       ; 5.249 ;
+; Op26       ; MemWrite     ; 4.415 ;       ;       ; 4.996 ;
+; Op26       ; MemtoReg     ; 4.714 ;       ;       ; 5.267 ;
+; Op26       ; RegDest      ;       ; 4.897 ; 5.472 ;       ;
+; Op26       ; RegWrite     ; 4.423 ; 5.045 ; 5.613 ; 5.042 ;
+; Op26       ; operation[0] ;       ; 6.371 ; 6.785 ;       ;
+; Op26       ; operation[1] ; 4.670 ;       ;       ; 5.207 ;
+; Op26       ; operation[2] ;       ; 4.510 ; 5.077 ;       ;
+; Op27       ; ALU_src      ; 5.074 ;       ;       ; 5.702 ;
+; Op27       ; Branch       ;       ; 4.221 ; 4.812 ;       ;
+; Op27       ; J            ; 4.261 ;       ;       ; 4.793 ;
+; Op27       ; MemRead      ; 4.669 ;       ;       ; 5.218 ;
+; Op27       ; MemWrite     ; 4.417 ;       ;       ; 4.990 ;
+; Op27       ; MemtoReg     ; 4.686 ;       ;       ; 5.236 ;
+; Op27       ; RegDest      ;       ; 4.195 ; 4.773 ;       ;
+; Op27       ; RegWrite     ; 4.378 ; 4.343 ; 4.914 ; 4.970 ;
+; Op27       ; operation[0] ;       ; 5.669 ; 6.086 ;       ;
+; Op27       ; operation[1] ; 3.975 ;       ;       ; 4.533 ;
+; Op27       ; operation[2] ;       ; 4.107 ; 4.673 ;       ;
+; Op28       ; ALU_src      ;       ; 5.393 ; 5.924 ;       ;
+; Op28       ; Branch       ; 4.429 ;       ;       ; 4.978 ;
+; Op28       ; J            ;       ; 4.408 ; 5.032 ;       ;
+; Op28       ; MemRead      ;       ; 4.909 ; 5.519 ;       ;
+; Op28       ; MemWrite     ;       ; 4.681 ; 5.267 ;       ;
+; Op28       ; MemtoReg     ;       ; 4.927 ; 5.536 ;       ;
+; Op28       ; RegDest      ;       ; 4.374 ; 4.986 ;       ;
+; Op28       ; RegWrite     ;       ; 4.661 ; 5.228 ;       ;
+; Op28       ; operation[0] ;       ; 5.848 ; 6.299 ;       ;
+; Op28       ; operation[1] ; 4.150 ;       ;       ; 4.725 ;
+; Op28       ; operation[2] ; 4.150 ;       ;       ; 4.747 ;
+; Op29       ; Branch       ;       ; 4.908 ; 5.491 ;       ;
+; Op29       ; J            ;       ; 4.899 ; 5.472 ;       ;
+; Op29       ; MemRead      ;       ; 4.772 ; 5.416 ;       ;
+; Op29       ; MemWrite     ; 4.563 ;       ;       ; 5.144 ;
+; Op29       ; MemtoReg     ;       ; 4.790 ; 5.433 ;       ;
+; Op29       ; RegDest      ;       ; 4.888 ; 5.454 ;       ;
+; Op29       ; RegWrite     ;       ; 5.036 ; 5.595 ;       ;
+; Op29       ; operation[0] ;       ; 6.362 ; 6.767 ;       ;
+; Op29       ; operation[1] ; 4.661 ;       ;       ; 5.189 ;
+; Op29       ; operation[2] ;       ; 4.501 ; 5.059 ;       ;
+; Op30       ; ALU_src      ;       ; 5.304 ; 5.790 ;       ;
+; Op30       ; Branch       ;       ; 4.831 ; 5.397 ;       ;
+; Op30       ; J            ;       ; 4.822 ; 5.378 ;       ;
+; Op30       ; MemRead      ;       ; 4.820 ; 5.385 ;       ;
+; Op30       ; MemWrite     ;       ; 4.592 ; 5.133 ;       ;
+; Op30       ; MemtoReg     ;       ; 4.838 ; 5.402 ;       ;
+; Op30       ; RegDest      ;       ; 4.811 ; 5.360 ;       ;
+; Op30       ; RegWrite     ;       ; 4.959 ; 5.501 ;       ;
+; Op30       ; operation[0] ;       ; 6.285 ; 6.673 ;       ;
+; Op30       ; operation[1] ; 4.584 ;       ;       ; 5.095 ;
+; Op30       ; operation[2] ;       ; 4.424 ; 4.965 ;       ;
+; Op31       ; ALU_src      ; 5.384 ;       ;       ; 6.028 ;
+; Op31       ; Branch       ;       ; 4.925 ; 5.500 ;       ;
+; Op31       ; J            ;       ; 4.916 ; 5.481 ;       ;
+; Op31       ; MemRead      ; 4.979 ;       ;       ; 5.544 ;
+; Op31       ; MemWrite     ; 4.727 ;       ;       ; 5.316 ;
+; Op31       ; MemtoReg     ; 4.996 ;       ;       ; 5.562 ;
+; Op31       ; RegDest      ;       ; 4.905 ; 5.463 ;       ;
+; Op31       ; RegWrite     ; 4.688 ; 5.053 ; 5.604 ; 5.296 ;
+; Op31       ; operation[0] ;       ; 6.379 ; 6.776 ;       ;
+; Op31       ; operation[1] ; 4.678 ;       ;       ; 5.198 ;
+; Op31       ; operation[2] ;       ; 4.518 ; 5.068 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; Op0        ; operation[0] ; 4.377 ;       ;       ; 4.789 ;
+; Op1        ; operation[2] ; 4.309 ;       ;       ; 4.925 ;
+; Op2        ; operation[1] ;       ; 4.345 ; 4.973 ;       ;
+; Op3        ; operation[0] ; 4.962 ;       ;       ; 5.667 ;
+; Op26       ; ALU_src      ; 4.926 ;       ;       ; 5.555 ;
+; Op26       ; Branch       ;       ; 4.727 ; 5.313 ;       ;
+; Op26       ; J            ;       ; 4.712 ; 5.299 ;       ;
+; Op26       ; MemRead      ; 4.533 ;       ;       ; 5.079 ;
+; Op26       ; MemWrite     ; 4.263 ;       ;       ; 4.835 ;
+; Op26       ; MemtoReg     ; 4.551 ;       ;       ; 5.097 ;
+; Op26       ; RegDest      ;       ; 4.703 ; 5.280 ;       ;
+; Op26       ; RegWrite     ; 4.272 ; 4.847 ; 5.418 ; 4.882 ;
+; Op26       ; operation[0] ;       ; 6.083 ; 6.511 ;       ;
+; Op26       ; operation[1] ; 4.506 ;       ;       ; 5.040 ;
+; Op26       ; operation[2] ;       ; 4.354 ; 4.914 ;       ;
+; Op27       ; ALU_src      ; 4.871 ;       ;       ; 5.481 ;
+; Op27       ; Branch       ;       ; 4.078 ; 4.660 ;       ;
+; Op27       ; J            ; 4.113 ;       ;       ; 4.641 ;
+; Op27       ; MemRead      ; 4.486 ;       ;       ; 5.031 ;
+; Op27       ; MemWrite     ; 4.243 ;       ;       ; 4.813 ;
+; Op27       ; MemtoReg     ; 4.504 ;       ;       ; 5.049 ;
+; Op27       ; RegDest      ;       ; 4.051 ; 4.620 ;       ;
+; Op27       ; RegWrite     ; 4.228 ; 4.195 ; 4.758 ; 4.812 ;
+; Op27       ; operation[0] ;       ; 5.431 ; 5.851 ;       ;
+; Op27       ; operation[1] ; 3.841 ;       ;       ; 4.392 ;
+; Op27       ; operation[2] ;       ; 3.952 ; 4.513 ;       ;
+; Op28       ; ALU_src      ;       ; 5.170 ; 5.704 ;       ;
+; Op28       ; Branch       ; 4.278 ;       ;       ; 4.820 ;
+; Op28       ; J            ;       ; 4.257 ; 4.870 ;       ;
+; Op28       ; MemRead      ;       ; 4.720 ; 5.319 ;       ;
+; Op28       ; MemWrite     ;       ; 4.502 ; 5.076 ;       ;
+; Op28       ; MemtoReg     ;       ; 4.738 ; 5.337 ;       ;
+; Op28       ; RegDest      ;       ; 4.223 ; 4.826 ;       ;
+; Op28       ; RegWrite     ;       ; 4.367 ; 4.964 ;       ;
+; Op28       ; operation[0] ;       ; 5.603 ; 6.057 ;       ;
+; Op28       ; operation[1] ; 4.009 ;       ;       ; 4.577 ;
+; Op28       ; operation[2] ; 4.009 ;       ;       ; 4.598 ;
+; Op29       ; Branch       ;       ; 4.719 ; 5.296 ;       ;
+; Op29       ; J            ;       ; 4.704 ; 5.282 ;       ;
+; Op29       ; MemRead      ;       ; 4.587 ; 5.220 ;       ;
+; Op29       ; MemWrite     ; 4.383 ;       ;       ; 4.960 ;
+; Op29       ; MemtoReg     ;       ; 4.605 ; 5.238 ;       ;
+; Op29       ; RegDest      ;       ; 4.695 ; 5.263 ;       ;
+; Op29       ; RegWrite     ;       ; 4.399 ; 4.975 ;       ;
+; Op29       ; operation[0] ;       ; 6.075 ; 6.494 ;       ;
+; Op29       ; operation[1] ; 4.498 ;       ;       ; 5.023 ;
+; Op29       ; operation[2] ;       ; 4.346 ; 4.897 ;       ;
+; Op30       ; ALU_src      ;       ; 5.084 ; 5.575 ;       ;
+; Op30       ; Branch       ;       ; 4.647 ; 5.207 ;       ;
+; Op30       ; J            ;       ; 4.632 ; 5.193 ;       ;
+; Op30       ; MemRead      ;       ; 4.634 ; 5.190 ;       ;
+; Op30       ; MemWrite     ;       ; 4.416 ; 4.947 ;       ;
+; Op30       ; MemtoReg     ;       ; 4.652 ; 5.208 ;       ;
+; Op30       ; RegDest      ;       ; 4.623 ; 5.174 ;       ;
+; Op30       ; RegWrite     ;       ; 4.415 ; 4.932 ;       ;
+; Op30       ; operation[0] ;       ; 6.003 ; 6.405 ;       ;
+; Op30       ; operation[1] ; 4.426 ;       ;       ; 4.934 ;
+; Op30       ; operation[2] ;       ; 4.274 ; 4.808 ;       ;
+; Op31       ; ALU_src      ; 5.170 ;       ;       ; 5.795 ;
+; Op31       ; Branch       ;       ; 4.736 ; 5.306 ;       ;
+; Op31       ; J            ;       ; 4.721 ; 5.292 ;       ;
+; Op31       ; MemRead      ; 4.785 ;       ;       ; 5.345 ;
+; Op31       ; MemWrite     ; 4.542 ;       ;       ; 5.127 ;
+; Op31       ; MemtoReg     ; 4.803 ;       ;       ; 5.363 ;
+; Op31       ; RegDest      ;       ; 4.712 ; 5.273 ;       ;
+; Op31       ; RegWrite     ; 4.527 ; 4.856 ; 5.411 ; 5.126 ;
+; Op31       ; operation[0] ;       ; 6.092 ; 6.504 ;       ;
+; Op31       ; operation[1] ; 4.515 ;       ;       ; 5.033 ;
+; Op31       ; operation[2] ;       ; 4.363 ; 4.907 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------+
+; Progagation Delay                                           ;
++------------+--------------+-------+--------+--------+-------+
+; Input Port ; Output Port  ; RR    ; RF     ; FR     ; FF    ;
++------------+--------------+-------+--------+--------+-------+
+; Op0        ; operation[0] ; 7.609 ;        ;        ; 7.624 ;
+; Op1        ; operation[2] ; 7.654 ;        ;        ; 8.016 ;
+; Op2        ; operation[1] ;       ; 7.802  ; 8.154  ;       ;
+; Op3        ; operation[0] ; 8.841 ;        ;        ; 9.180 ;
+; Op26       ; ALU_src      ; 8.691 ;        ;        ; 9.089 ;
+; Op26       ; Branch       ;       ; 8.501  ; 8.793  ;       ;
+; Op26       ; J            ;       ; 8.484  ; 8.795  ;       ;
+; Op26       ; MemRead      ; 7.928 ;        ;        ; 8.513 ;
+; Op26       ; MemWrite     ; 7.482 ;        ;        ; 8.067 ;
+; Op26       ; MemtoReg     ; 7.939 ;        ;        ; 8.523 ;
+; Op26       ; RegDest      ;       ; 8.483  ; 8.771  ;       ;
+; Op26       ; RegWrite     ; 7.644 ; 8.613  ; 9.178  ; 7.976 ;
+; Op26       ; operation[0] ;       ; 10.649 ; 11.148 ;       ;
+; Op26       ; operation[1] ; 7.936 ;        ;        ; 8.441 ;
+; Op26       ; operation[2] ;       ; 7.651  ; 8.209  ;       ;
+; Op27       ; ALU_src      ; 8.682 ;        ;        ; 9.081 ;
+; Op27       ; Branch       ;       ; 7.294  ; 7.582  ;       ;
+; Op27       ; J            ; 7.205 ;        ;        ; 7.737 ;
+; Op27       ; MemRead      ; 7.925 ;        ;        ; 8.513 ;
+; Op27       ; MemWrite     ; 7.520 ;        ;        ; 8.098 ;
+; Op27       ; MemtoReg     ; 7.936 ;        ;        ; 8.523 ;
+; Op27       ; RegDest      ;       ; 7.262  ; 7.555  ;       ;
+; Op27       ; RegWrite     ; 7.605 ; 7.392  ; 7.962  ; 7.908 ;
+; Op27       ; operation[0] ;       ; 9.428  ; 9.932  ;       ;
+; Op27       ; operation[1] ; 6.714 ;        ;        ; 7.278 ;
+; Op27       ; operation[2] ;       ; 6.959  ; 7.522  ;       ;
+; Op28       ; ALU_src      ;       ; 9.112  ; 9.589  ;       ;
+; Op28       ; Branch       ; 7.477 ;        ;        ; 8.051 ;
+; Op28       ; J            ;       ; 7.627  ; 7.992  ;       ;
+; Op28       ; MemRead      ;       ; 8.544  ; 8.832  ;       ;
+; Op28       ; MemWrite     ;       ; 8.129  ; 8.427  ;       ;
+; Op28       ; MemtoReg     ;       ; 8.554  ; 8.843  ;       ;
+; Op28       ; RegDest      ;       ; 7.587  ; 7.916  ;       ;
+; Op28       ; RegWrite     ;       ; 7.939  ; 8.512  ;       ;
+; Op28       ; operation[0] ;       ; 9.753  ; 10.293 ;       ;
+; Op28       ; operation[1] ; 7.034 ;        ;        ; 7.600 ;
+; Op28       ; operation[2] ; 7.174 ;        ;        ; 7.505 ;
+; Op29       ; Branch       ;       ; 8.512  ; 8.772  ;       ;
+; Op29       ; J            ;       ; 8.495  ; 8.774  ;       ;
+; Op29       ; MemRead      ;       ; 8.313  ; 8.609  ;       ;
+; Op29       ; MemWrite     ; 7.784 ;        ;        ; 8.325 ;
+; Op29       ; MemtoReg     ;       ; 8.323  ; 8.620  ;       ;
+; Op29       ; RegDest      ;       ; 8.494  ; 8.750  ;       ;
+; Op29       ; RegWrite     ;       ; 8.624  ; 9.157  ;       ;
+; Op29       ; operation[0] ;       ; 10.660 ; 11.127 ;       ;
+; Op29       ; operation[1] ; 7.947 ;        ;        ; 8.420 ;
+; Op29       ; operation[2] ;       ; 7.662  ; 8.188  ;       ;
+; Op30       ; ALU_src      ;       ; 8.945  ; 9.377  ;       ;
+; Op30       ; Branch       ;       ; 8.382  ; 8.630  ;       ;
+; Op30       ; J            ;       ; 8.365  ; 8.632  ;       ;
+; Op30       ; MemRead      ;       ; 8.377  ; 8.620  ;       ;
+; Op30       ; MemWrite     ;       ; 7.962  ; 8.215  ;       ;
+; Op30       ; MemtoReg     ;       ; 8.387  ; 8.631  ;       ;
+; Op30       ; RegDest      ;       ; 8.364  ; 8.608  ;       ;
+; Op30       ; RegWrite     ;       ; 8.494  ; 9.015  ;       ;
+; Op30       ; operation[0] ;       ; 10.530 ; 10.985 ;       ;
+; Op30       ; operation[1] ; 7.817 ;        ;        ; 8.278 ;
+; Op30       ; operation[2] ;       ; 7.532  ; 8.046  ;       ;
+; Op31       ; ALU_src      ; 9.253 ;        ;        ; 9.629 ;
+; Op31       ; Branch       ;       ; 8.568  ; 8.796  ;       ;
+; Op31       ; J            ;       ; 8.551  ; 8.798  ;       ;
+; Op31       ; MemRead      ; 8.496 ;        ;        ; 9.061 ;
+; Op31       ; MemWrite     ; 8.091 ;        ;        ; 8.646 ;
+; Op31       ; MemtoReg     ; 8.507 ;        ;        ; 9.071 ;
+; Op31       ; RegDest      ;       ; 8.550  ; 8.774  ;       ;
+; Op31       ; RegWrite     ; 8.176 ; 8.680  ; 9.181  ; 8.456 ;
+; Op31       ; operation[0] ;       ; 10.716 ; 11.151 ;       ;
+; Op31       ; operation[1] ; 8.003 ;        ;        ; 8.444 ;
+; Op31       ; operation[2] ;       ; 7.718  ; 8.212  ;       ;
++------------+--------------+-------+--------+--------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; Op0        ; operation[0] ; 4.377 ;       ;       ; 4.789 ;
+; Op1        ; operation[2] ; 4.309 ;       ;       ; 4.925 ;
+; Op2        ; operation[1] ;       ; 4.345 ; 4.973 ;       ;
+; Op3        ; operation[0] ; 4.962 ;       ;       ; 5.667 ;
+; Op26       ; ALU_src      ; 4.926 ;       ;       ; 5.555 ;
+; Op26       ; Branch       ;       ; 4.727 ; 5.313 ;       ;
+; Op26       ; J            ;       ; 4.712 ; 5.299 ;       ;
+; Op26       ; MemRead      ; 4.533 ;       ;       ; 5.079 ;
+; Op26       ; MemWrite     ; 4.263 ;       ;       ; 4.835 ;
+; Op26       ; MemtoReg     ; 4.551 ;       ;       ; 5.097 ;
+; Op26       ; RegDest      ;       ; 4.703 ; 5.280 ;       ;
+; Op26       ; RegWrite     ; 4.272 ; 4.847 ; 5.418 ; 4.882 ;
+; Op26       ; operation[0] ;       ; 6.083 ; 6.511 ;       ;
+; Op26       ; operation[1] ; 4.506 ;       ;       ; 5.040 ;
+; Op26       ; operation[2] ;       ; 4.354 ; 4.914 ;       ;
+; Op27       ; ALU_src      ; 4.871 ;       ;       ; 5.481 ;
+; Op27       ; Branch       ;       ; 4.078 ; 4.660 ;       ;
+; Op27       ; J            ; 4.113 ;       ;       ; 4.641 ;
+; Op27       ; MemRead      ; 4.486 ;       ;       ; 5.031 ;
+; Op27       ; MemWrite     ; 4.243 ;       ;       ; 4.813 ;
+; Op27       ; MemtoReg     ; 4.504 ;       ;       ; 5.049 ;
+; Op27       ; RegDest      ;       ; 4.051 ; 4.620 ;       ;
+; Op27       ; RegWrite     ; 4.228 ; 4.195 ; 4.758 ; 4.812 ;
+; Op27       ; operation[0] ;       ; 5.431 ; 5.851 ;       ;
+; Op27       ; operation[1] ; 3.841 ;       ;       ; 4.392 ;
+; Op27       ; operation[2] ;       ; 3.952 ; 4.513 ;       ;
+; Op28       ; ALU_src      ;       ; 5.170 ; 5.704 ;       ;
+; Op28       ; Branch       ; 4.278 ;       ;       ; 4.820 ;
+; Op28       ; J            ;       ; 4.257 ; 4.870 ;       ;
+; Op28       ; MemRead      ;       ; 4.720 ; 5.319 ;       ;
+; Op28       ; MemWrite     ;       ; 4.502 ; 5.076 ;       ;
+; Op28       ; MemtoReg     ;       ; 4.738 ; 5.337 ;       ;
+; Op28       ; RegDest      ;       ; 4.223 ; 4.826 ;       ;
+; Op28       ; RegWrite     ;       ; 4.367 ; 4.964 ;       ;
+; Op28       ; operation[0] ;       ; 5.603 ; 6.057 ;       ;
+; Op28       ; operation[1] ; 4.009 ;       ;       ; 4.577 ;
+; Op28       ; operation[2] ; 4.009 ;       ;       ; 4.598 ;
+; Op29       ; Branch       ;       ; 4.719 ; 5.296 ;       ;
+; Op29       ; J            ;       ; 4.704 ; 5.282 ;       ;
+; Op29       ; MemRead      ;       ; 4.587 ; 5.220 ;       ;
+; Op29       ; MemWrite     ; 4.383 ;       ;       ; 4.960 ;
+; Op29       ; MemtoReg     ;       ; 4.605 ; 5.238 ;       ;
+; Op29       ; RegDest      ;       ; 4.695 ; 5.263 ;       ;
+; Op29       ; RegWrite     ;       ; 4.399 ; 4.975 ;       ;
+; Op29       ; operation[0] ;       ; 6.075 ; 6.494 ;       ;
+; Op29       ; operation[1] ; 4.498 ;       ;       ; 5.023 ;
+; Op29       ; operation[2] ;       ; 4.346 ; 4.897 ;       ;
+; Op30       ; ALU_src      ;       ; 5.084 ; 5.575 ;       ;
+; Op30       ; Branch       ;       ; 4.647 ; 5.207 ;       ;
+; Op30       ; J            ;       ; 4.632 ; 5.193 ;       ;
+; Op30       ; MemRead      ;       ; 4.634 ; 5.190 ;       ;
+; Op30       ; MemWrite     ;       ; 4.416 ; 4.947 ;       ;
+; Op30       ; MemtoReg     ;       ; 4.652 ; 5.208 ;       ;
+; Op30       ; RegDest      ;       ; 4.623 ; 5.174 ;       ;
+; Op30       ; RegWrite     ;       ; 4.415 ; 4.932 ;       ;
+; Op30       ; operation[0] ;       ; 6.003 ; 6.405 ;       ;
+; Op30       ; operation[1] ; 4.426 ;       ;       ; 4.934 ;
+; Op30       ; operation[2] ;       ; 4.274 ; 4.808 ;       ;
+; Op31       ; ALU_src      ; 5.170 ;       ;       ; 5.795 ;
+; Op31       ; Branch       ;       ; 4.736 ; 5.306 ;       ;
+; Op31       ; J            ;       ; 4.721 ; 5.292 ;       ;
+; Op31       ; MemRead      ; 4.785 ;       ;       ; 5.345 ;
+; Op31       ; MemWrite     ; 4.542 ;       ;       ; 5.127 ;
+; Op31       ; MemtoReg     ; 4.803 ;       ;       ; 5.363 ;
+; Op31       ; RegDest      ;       ; 4.712 ; 5.273 ;       ;
+; Op31       ; RegWrite     ; 4.527 ; 4.856 ; 5.411 ; 5.126 ;
+; Op31       ; operation[0] ;       ; 6.092 ; 6.504 ;       ;
+; Op31       ; operation[1] ; 4.515 ;       ;       ; 5.033 ;
+; Op31       ; operation[2] ;       ; 4.363 ; 4.907 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; RegDest       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_src       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; MemtoReg      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; RegWrite      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; MemRead       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; MemWrite      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Branch        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; J             ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; operation[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; operation[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; operation[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; operation[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; Op5            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op4            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op27           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op28           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op31           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op30           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op29           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op26           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op1            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op2            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op3            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Op0            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RegDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_src       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; MemtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; RegWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; MemRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; MemWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; Branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; J             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; operation[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; operation[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; operation[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; operation[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RegDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_src       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; MemtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; RegWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; MemRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; MemWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; Branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; J             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; operation[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; operation[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; operation[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; operation[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RegDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_src       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; MemtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; RegWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; MemRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; MemWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; Branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; J             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; operation[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; operation[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; operation[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; operation[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 69    ; 69   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 69    ; 69   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jan 04 19:37:37 2023
+Info: Command: quartus_sta Control -c Control
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Control.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4608 megabytes
+    Info: Processing ended: Wed Jan 04 19:37:39 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

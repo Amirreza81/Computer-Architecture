@@ -1,0 +1,296 @@
+$comment
+	File created using the following command:
+		vcd file Control.msim.vcd -direction
+$end
+$date
+	Wed Jan 04 19:45:29 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module AluC_Control_vlg_vec_tst $end
+$var reg 1 ! Op0 $end
+$var reg 1 " Op1 $end
+$var reg 1 # Op2 $end
+$var reg 1 $ Op3 $end
+$var reg 1 % Op4 $end
+$var reg 1 & Op5 $end
+$var reg 1 ' Op26 $end
+$var reg 1 ( Op27 $end
+$var reg 1 ) Op28 $end
+$var reg 1 * Op29 $end
+$var reg 1 + Op30 $end
+$var reg 1 , Op31 $end
+$var wire 1 - ALU_src $end
+$var wire 1 . Branch $end
+$var wire 1 / J $end
+$var wire 1 0 MemRead $end
+$var wire 1 1 MemtoReg $end
+$var wire 1 2 MemWrite $end
+$var wire 1 3 operation [3] $end
+$var wire 1 4 operation [2] $end
+$var wire 1 5 operation [1] $end
+$var wire 1 6 operation [0] $end
+$var wire 1 7 RegDest $end
+$var wire 1 8 RegWrite $end
+$var wire 1 9 sampler $end
+$scope module i1 $end
+$var wire 1 : gnd $end
+$var wire 1 ; vcc $end
+$var wire 1 < unknown $end
+$var tri1 1 = devclrn $end
+$var tri1 1 > devpor $end
+$var tri1 1 ? devoe $end
+$var wire 1 @ Op5~input_o $end
+$var wire 1 A Op4~input_o $end
+$var wire 1 B Op31~input_o $end
+$var wire 1 C RegDest~output_o $end
+$var wire 1 D ALU_src~output_o $end
+$var wire 1 E MemtoReg~output_o $end
+$var wire 1 F RegWrite~output_o $end
+$var wire 1 G MemRead~output_o $end
+$var wire 1 H MemWrite~output_o $end
+$var wire 1 I Branch~output_o $end
+$var wire 1 J J~output_o $end
+$var wire 1 K operation[3]~output_o $end
+$var wire 1 L operation[2]~output_o $end
+$var wire 1 M operation[1]~output_o $end
+$var wire 1 N operation[0]~output_o $end
+$var wire 1 O Op30~input_o $end
+$var wire 1 P Op26~input_o $end
+$var wire 1 Q Op29~input_o $end
+$var wire 1 R inst|R_Format~0_combout $end
+$var wire 1 S Op28~input_o $end
+$var wire 1 T Op27~input_o $end
+$var wire 1 U inst|R_Format~combout $end
+$var wire 1 V inst|lw~0_combout $end
+$var wire 1 W inst|inst~combout $end
+$var wire 1 X inst|lw~combout $end
+$var wire 1 Y inst|inst16~combout $end
+$var wire 1 Z inst|sw~combout $end
+$var wire 1 [ inst|beq~combout $end
+$var wire 1 \ inst|Jump~combout $end
+$var wire 1 ] Op1~input_o $end
+$var wire 1 ^ inst2|inst3~combout $end
+$var wire 1 _ Op2~input_o $end
+$var wire 1 ` inst2|inst6~combout $end
+$var wire 1 a Op0~input_o $end
+$var wire 1 b Op3~input_o $end
+$var wire 1 c inst2|inst1~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+06
+15
+04
+03
+17
+18
+x9
+0:
+1;
+x<
+1=
+1>
+1?
+1@
+0A
+0B
+1C
+0D
+0E
+1F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+0Q
+1R
+0S
+0T
+0U
+0V
+0W
+1X
+1Y
+1Z
+1[
+1\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+$end
+#40000
+1"
+1]
+09
+1^
+1L
+14
+#90000
+1#
+0"
+1_
+0]
+19
+1`
+0^
+0M
+0L
+05
+04
+#160000
+1!
+1a
+09
+1c
+1N
+16
+#230000
+1$
+0#
+1"
+0!
+1b
+0_
+1]
+0a
+19
+0`
+1^
+1M
+1L
+15
+14
+#310000
+1,
+1(
+1'
+0$
+0"
+1B
+1T
+1P
+0b
+0]
+09
+1V
+0R
+0\
+1U
+0^
+0c
+0X
+1\
+1J
+0C
+0L
+0N
+1/
+07
+04
+06
+1W
+1E
+1G
+0J
+1D
+11
+10
+0/
+1-
+#450000
+1*
+1Q
+19
+0Z
+1X
+0Y
+1H
+0E
+0G
+0F
+12
+01
+00
+08
+#560000
+1)
+0,
+0(
+0'
+0*
+1S
+0B
+0T
+0P
+0Q
+09
+0V
+1R
+1Z
+0W
+0[
+0H
+0D
+02
+0-
+1^
+1I
+1L
+1.
+14
+#710000
+0)
+0S
+19
+1[
+0U
+0^
+0I
+1C
+0L
+0.
+17
+04
+1Y
+1F
+18
+#990000
+0&
+0@
+09
+#1000000
